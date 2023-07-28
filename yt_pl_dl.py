@@ -14,7 +14,7 @@ BATCH_SIZE = 5
 ## Step 1: Command to Flat URL to playlist
 !yt-dlp --flat-playlist -i --print-to-file url playlist.txt "https://youtube.com/?link"
 
-## Step 2: Convert large list into smaller list of n items
+## Step 2: Convert large list into smaller list of BATCH_SIZE items
 with open("playlist.txt") as pl:
     links = [l.strip() for l in pl]
 
