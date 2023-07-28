@@ -2,8 +2,8 @@
             ########### yt-dlp parallel download ###########
 ########################################################################
 ## Pre-requisites:
-##   open google colab
-##   put multiYT.sh in /content folder
+##     Google colab
+## put multiYT.sh in "/content" folder
 ## copy contents of this python file to colab code cell.
 
 
