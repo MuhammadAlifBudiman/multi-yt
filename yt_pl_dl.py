@@ -6,13 +6,14 @@
 ## put multiYT.sh in "/content" folder
 ## copy contents of this python file to colab code cell.
 
-
 ## how many parallel downloads?
 BATCH_SIZE = 5 
+PLAYLIST_URL = "https://www.youtube.com/playlist?"
+#########################################################################
 
 
 ## Step 1: Command to Flat URL to playlist
-!yt-dlp --flat-playlist -i --print-to-file url playlist.txt "https://youtube.com/?link"
+!yt-dlp --flat-playlist -i --print-to-file url playlist.txt "$PLAYLIST_URL"
 
 ## Step 2: Convert large list into smaller list of BATCH_SIZE items
 with open("playlist.txt") as pl:
