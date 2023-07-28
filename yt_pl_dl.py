@@ -3,7 +3,9 @@
 ########################################################################
 ## Pre-requisites:
 ##   open google colab
-##   put multiYT.sh in current folder
+##   put multiYT.sh in /content folder
+## copy contents of this python file to colab code cell.
+
 
 ## how many parallel downloads?
 BATCH_SIZE = 5 
