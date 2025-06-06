@@ -7,7 +7,7 @@
 cust_func(){
   echo "[+] DOWNLOADING..."
   echo "$1"
-  yt-dlp -f 'bestvideo[height<=1080]+251' --restrict-filenames "$1"
+  yt-dlp -f 'bestvideo[height<=1080]+251' --restrict-filenames --download-archive 'downloaded.txt' "$1"
   echo "[+] Completed"
 }
 
